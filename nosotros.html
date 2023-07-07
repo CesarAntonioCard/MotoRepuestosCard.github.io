@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoRepuestosCardozo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="image/fontello-a540fdbf/css/fontello.css">	
+    <link rel="stylesheet" href="image/fontello-c7addf01/css/fontello.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/nosotros.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+    <style>
+        .bg-success1{
+            background-color: #E2EFDA;
+            opacity: 0.9;
+        }
+        .bg-negro{
+            color: #000000;
+        }
+        .bg-fondo{
+                background-color: #FFFFFF;
+        } 
+        .bg-fondo-consulta{
+                background-color: #eff4f8;
+        }
+        .bg-fondo-info{
+                background-color: #0f7422;
+        }
+        .bg-fondo-moto {
+        position: relative;
+        z-index: 1;
+    }
+
+    .colores {
+      opacity: 1;
+    }
+
+
+
+    .bg-fondo-moto::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("image/backmoto.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(0.5); /* Cambia el valor de 0.7 según la oscuridad deseada (0.0 a 1.0) */
+        z-index: -1;
+    }
+    </style>
+
+
+<style>
+  .colores:hover {
+    background-color: #d9ff00; /* Cambia el color de fondo al pasar el mouse */
+  }
+</style>
+
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=51973944957&text=Hola%21%20En%20que%20le%20puedo%20ayudar?"
+    class="btn-wsp" target="_blank">
+    <i class="icon-whatsapp"></i>
+  </a>
+  <a href="https://www.facebook.com/MotoRepuestosCardozo"
+    class="btn-fb" target="_blank">
+    <i class="icon-facebook"></i>
+  </a>
+    <!-- Cabecera-Menu -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-fondo ">  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom: 15px;"> 
+        <span class="navbar-toggler-icon"></span><img class="img-fluid rounded me-md-4"  src="image/logo.png" width="390" height="24">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  
+        <img class="img-fluid rounded d-none d-sm-none d-md-none d-lg-block"  src="image/logo.png" 
+        width="390" height="24">
+  
+        <ul class="navbar-nav me-0 mb-0 mb-lg-0">
+            <div class="d-grid gap-3 d-md-flex"  id="headera">
+                <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6"  style="border: #FFFFFF;" type="button"><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></button>
+   
+                <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="productos.html"><i class="bi bi-cart-fill"></i>Productos</a></button>
+  
+                <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF; " type="button"><a href="contacto.html"><i class="bi bi-envelope-fill"></i>Contacto</a></button>
+
+                <button   id="btnbar" class="btn  btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="nosotros.html"><i class="bi bi-people-fill"></i>Nosotros</a></button>
+           </div> 
+        </ul>
+    </div> 
+  </nav>  
+      <!-- Fin cabecera -->
+
+      <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón -->
+      <div class="row row-cols-md-7">
+        <div class="col-sm-12 col-md-5 col-lg-5 col bg-fondo-info colores" style="color: #000000; text-align: center;">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+            <h3 style="text-align: center; margin: 0;">¡¡¡BIENVENIDO A REPUESTOS CARDOZO!!!</h3>
+            <span>
+              <h4 class="text-wrap text-break" style="text-align: center; margin-top: 40px;">Somos una empresa dedicada a la venta de repuestos y accesorios para motocicleta de todas marcas, contamos con 23 años de experiencia en el mercado, ofreciendo calidad y garantía en todos nuestros productos</h4>
+            </span>
+          </div>
+        </div>
+        <form class="col-sm-12 col-md-7 col-lg-7 col bg-fondo-consulta" action="" class="formulario" id="formulario">
+          <h3 class="grid text-center"></h3>
+          <div class="col d-flex justify-content-center align-items-center pt-3 pb-3 custom-height" style="height: 30vh;">
+            <div class="d-flex flex-column align-items-center">
+              <img class="img-fluid rounded" src="image/logo.png" style="max-width: 100%;">
+            </div>
+          </div>
+        </form>
+      </div>
+
+         <div class="row row-cols-md-3 gx-10" style="color: #fdfdfd; text-align: center;">
+            <div class="col-md-4">.</div>
+            <!-- <div class="col-md-4">.</div>
+            <div class="col-md-4">.</div> -->
+          </div>
+
+<!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón -->
+    <div class="row row-cols-md-7">
+      <form class="col-sm-12 col-md-5 col-lg-5 col bg-fondo-consulta" action="" class="formulario" id="formulario">
+        <h3 class="grid text-center"></h3>
+        <div class="col d-flex justify-content-center align-items-center pt-3 pb-3 custom-height" style="height: 30vh;">
+          <div class="d-flex flex-column align-items-center">
+            <img class="img-fluid rounded" src="image/bmw.png" style="max-height: 210px;">
+          </div>
+        </div>
+      </form>
+      <div class="col-sm-12 col-md-7 col-lg-7 col bg-fondo-info colores" style="color: #000000; text-align: center;">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+          <h3 style="text-align: center; margin: 0;">¡¡¡NUESTRA MISION!!!</h3>
+          <span>
+            <h4 class="text-wrap text-break" style="text-align: center; margin-top: 40px;">Nuestro objetivo es ofrecer a nuestros clientes productos de alta calidad, diseño poderno, precios al alcance de todos y un excelente servicio post venta, basando nuestra relaciones en una politica de confianza y puertas abierta a todos</h4>
+          </span>
+        </div>
+      </div>
+    </div>
+
+        <div class="row row-cols-md-3 gx-10" style="color: #fdfdfd; text-align: center;">
+            <div class="col-md-4">.</div>
+            <!-- <div class="col-md-4">.</div>
+            <div class="col-md-4">.</div> -->
+          </div>
+
+        
+ <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón -->
+        <div class="row " >
+            
+          
+         <div class="col-sm-12 col-md-5 col-lg-5 col bg-fondo-info colores" style="color: #000000; text-align: center;">
+          <h3 style="margin-bottom: 70px;">¡¡¡NUESTRA VISION!!!</h3>
+          <br>
+          <span> 
+              <h4>Ser la primera y mejor opcion en venta de repuestos y accesorios para motores de cajamarca</h4>
+          </span><br>
+          <br>     
+      </div>
+
+      <form class="col-sm-12 col-md-7 col-lg-7  col bg-fondo-consulta" action="" class="formulario" id="formulario" >
+        <h3 class="grid text-center"></h3>
+        
+      <!-- Grupo: Consulta -->
+      <div class="col"  style="text-align: center"> <img class="img-fluid rounded" src="image/largo.png" style="max-width: 100%;"></div>
+      
+      </form>
+          </div>
+        
+
+        <div class="row row-cols-md-3 gx-10" style="color: #fdfdfd; text-align: center;">
+           <div class="col-md-4">.</div>
+           <!-- <div class="col-md-4">.</div>
+           <div class="col-md-4">.</div> -->
+         </div>
+
+        
+
+ <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón --> <!-- Informacón -->
+          
+        <!--Fin Informacón -->  
+        <!-- Mapa -->
+        <div class="row " >
+            <div class="col-12 col bg-fondo-moto" style="color: #ffffff; text-align: center;">
+              <h2 style="margin-bottom: 70px; font-family: 'negritaanchacircular', sans-serif; font-weight: bold;">LES OFRECEMOS</h2>
+             <span> 
+                <h3 style="text-align: left;">                  
+                    <span style="float: left;">Productos de calidad</span>
+                    <span style="display: inline-block; text-align: center; width: 50%;">Las mejores marcas</span>
+                    <span style="float: right;">Precios Bajos</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="float: left;">Sorteo para nuestros clientes</span>
+                    <span style="float: right;">Descuentos y ofertas todos los meses</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </h3>
+                <h3>                    
+                </h3>
+             </span><br>
+         </div>
+          <!-- Slider Text --> <!-- Slider Text --> <!-- Slider Text --> <!-- Slider Text -->
+        </div>
+
+        <div class="row row-cols-md-3 gx-10" style="color: #fdfdfd; text-align: center;">
+          <div class="col-md-4">.</div>
+          <!-- <div class="col-md-4">.</div>
+          <div class="col-md-4">.</div> -->
+        </div>
+     <!-- Slider Text --> <!-- Slider Text --> <!-- Slider Text --> <!-- Slider Text --> <!-- Slider Text -->
+     <div class="row-12">
+     <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 bg-fondo-info " style="color: #000000; text-align: center;">
+      <div class="col border colores">
+        <img src="image/precio.png" alt="Imagen 1" style="max-width: 60%; margin: 0 auto; max-height: 300px;  ">
+        <h6>PRECIOS RAZONABLES</h6>
+        Le ofrecemos los mejores precios del mercado, porque nuestra prioridad es ofrecer calidad y un buen producto
+      </div>
+      <div class="col border colores">
+        <img src="image/equipo.png" alt="Imagen 1" style="max-width: 60%; margin: 0 auto; max-height: 300px; ">
+        <h6>EQUIPO PROFESIONAL</h6>
+        Estamos conformados por un grupo humano de profesionales altamente calificados y con gran experiencia
+      </div>
+      <div class="col border colores">
+        <img src="image/delivery.png" alt="Imagen 1" style="max-width: 60%; margin: 0 auto; max-height: 300px; ">
+        <h6>DELIVERY</h6>
+        Nuestra empresa se compromete en realizar el envío de su pedido en los tiempos establecidos con el cliente
+      </div>
+      <div class="col border colores">
+        <img src="image/pago.png" alt="Imagen 1" style="max-width: 60%; margin: 0 auto; max-height: 300px; ">
+        <h6>MÉTODO DE PAGO</h6>
+        Ahora puedes pagar con tarjeta, pin o yape en nuestras tiendas
+      </div>
+    </div>
+     </div>
+
+
+    <div class="row row-cols-md-3 gx-10" style="color: #fdfdfd; text-align: center;">
+      <div class="col-md-4">.</div>
+      <!-- <div class="col-md-4">.</div>
+      <div class="col-md-4">.</div> -->
+    </div>
+
+    
+
+
+
+
+     <div class="row-12">   <!-- Slider Text -->
+        <div class="row" >              
+            <div class="col-12 col bg-fondo-consulta" style="color: #000000; text-align: center;">
+             <span> 
+                <h3>
+                    <div  style= "text-align: center">
+                        <span >PRODUCTOS EN OFERTA Y SORTEOS</span>           
+                    </div>
+                    <div >
+                                         
+                    </div>
+                    <br>
+                    <div>
+                        <div class="contenedor-marcas">
+                          <div class="row align-items-center">
+                            <div class="col-6 col-carousel">
+                              <header class="text-center">                               
+                              </header>
+                              <div class="owl-carousel carousel-main">
+                                <div> <img src="image/promocion/promo1.jpg" alt="Imagen 1" style="max-width: 30%; display: block; margin: 0 auto; max-height:300px" /></div>
+                                <div> <img src="image/promocion/promo2.jpg" alt="Imagen 2" style="max-width: 30%; display: block; margin: 0 auto; max-height:300px" /></div>
+                                <div> <img src="image/promocion/promo3.jpg" alt="Imagen 3" style="max-width: 30%; display: block; margin: 0 auto; max-height:300px" /></div>
+                                <div> <img src="image/promocion/promo4.jpg" alt="Imagen 4" style="max-width: 30%; display: block; margin: 0 auto; max-height:300px" /></div>
+                                <div> <img src="image/promocion/promo5.jpg" alt="Imagen 5" style="max-width: 30%; display: block; margin: 0 auto; max-height:300px" /></div>
+                              </div>
+                            </div>
+                            <div class="col-6 col-carousel">
+                                <header class="text-center">                         
+                                </header>
+                                <div class="owl-carousel carousel-main">
+                                  <div> <img src="image/sorteo/panetones.jpg" alt="Imagen 1" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo1.jpg" alt="Imagen 2" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo2.jpg" alt="Imagen 3" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo3.jpg" alt="Imagen 4" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo4.jpg" alt="Imagen 5" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo5.jpg" alt="Imagen 6" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo6.jpg" alt="Imagen 7" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo7.jpg" alt="Imagen 8" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/sorteo8.jpg" alt="Imagen 9" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco1.jpg" alt="Imagen 10" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco2.jpg" alt="Imagen 11" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco3.jpg" alt="Imagen 12" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco4.jpg" alt="Imagen 13" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco5.jpg" alt="Imagen 14" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                  <div> <img src="image/sorteo/casco6.jpg" alt="Imagen 15" style="max-width: 30%; display: block; margin: 0 auto;" /></div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </h3>
+             </span><br>
+         </div>       
+        <!-- Fin slider -->
+      </div>
+      <footer class="short" id="footer">
+        <div class="containerFooter">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+              <h4 class="heading-primary">Moto Repuestos Cardozo</h4>
+              <p class="som">
+                Somos una empresa dedicada a la venta de repuestos y accesorios para motocicleta...
+                <a href="nosotros.html" class="btn-flat btn-xs">Ver más
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </p>
+              <hr class="light">
+            </div>
+            <div class="col-md-4 contacto">
+              <h5 class="mb-sm">Contacto</h5>
+              <span class="cel">973944957</span>
+              <ul class="list list-icons list-icons-sm">
+                <li>
+                  <i class="fa fa-envelope">
+                    <a href="mailto:cesarcardozobriceno@gmail.com">cesarcardozobriceno@gmail.com</a>
+                  </i>
+                </li>
+              </ul>
+            </div>        
+          </div>
+        </div>
+        
+        <div class="footer-copyright">
+         <div class="containerFooter">
+           <div class="row">
+             <div class="col-md-1">
+               <a href="#" class="logoF">
+                 <img class="image-responsive" src="image/logo.png" alt="" height="30px">
+               </a>
+             </div>
+             <div class="col-md-11">
+               <p>© 2023<b>Moto Repuestos Cardozo</b>-Todos los Derechos Reservados.</p>
+             </div>
+           </div>
+         </div>
+        </div>
+       </footer>
+   </div>
+</div>
+
+    <script src="Js/nosotros.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

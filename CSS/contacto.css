@@ -1,0 +1,374 @@
+
+@font-face {
+	font-family: "negritaanchacuadrada";
+	src: url('../fonts/ArialBlack/Arial\ Black.ttf');
+  }
+  @font-face {
+  font-family: "negritaanchacircular";
+	src: url('../fonts/Cooper/CooperBlackRegular.ttf');
+  }
+  @font-face {
+  font-family: "roboto1";
+	src: url('../fonts/Roboto/Roboto-Black.ttf')
+  }
+  @font-face {
+  font-family: "roboto2";
+	src: url('../fonts/Roboto/Roboto-BlackItalic.ttf')
+  }
+  @font-face {
+  font-family: "roboto3";
+	src: url('../fonts/Roboto/Roboto-Bold.ttf')
+  }
+  
+  .grid.text-center{
+	  font-family: 'negritaanchacircular';
+  }
+  #btnbar{
+	font-size: 20px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease; 
+  }
+  #btnbar:hover{
+    box-shadow: 0 0 40px rgba(0, 16, 109, 0.7);
+    background-color: #0D6EFD;
+  }
+  #btnbar i{
+	margin-right:10px;
+  }
+  .navbar-nav{
+	font-family: 'negritaanchacircular';
+  }
+  #headera{
+	margin-left:10%;
+  font-family: 'negritaanchacircular';
+  }
+  
+  a{
+	  text-decoration: none;
+	  color:black;
+    font-family: 'negritaanchacircular';
+  }
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+    padding: 25px 80px 25px 80px;
+	left: calc(45% - 40px);
+    right: calc(45% - 40px);
+	top: 5px;
+	background: #083966;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 9px;
+	position: relative;
+	overflow: hidden;
+}
+.boton span {
+	position: relative;
+	z-index: 1;
+	transition: .3s ease all;
+}
+
+.boton.enviar span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 25%;
+}
+
+.boton.enviar .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+	left: -80px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.enviar:hover {
+	background: #2f9b05;
+}
+
+.boton.enviar:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.enviar:hover span {
+	left: 10px;
+}
+
+/* Boton flotante de Wsp */
+a{
+    text-decoration: none;
+	color:black;
+}
+.btn-wsp{
+	position: fixed;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background:#0df053;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0,0.3);
+	z-index: 100;
+}
+.btn-wsp:hover{
+	text-decoration: none;
+	color: #0df053;
+	background: #fff;
+}
+/* Boton flotante de facebook */
+.btn-fb{
+	position:fixed;
+	float: left;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	bottom: 90px;
+	background:#3b5998;
+	color: #fff;
+	border-radius: 90px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0,0.3);
+	z-index: 100;
+	
+}
+.btn-fb:hover{
+	text-decoration: none;
+	color: #3b5998;
+	background: #fff;
+
+}
+/* ESTILO DE LA INFORMACIÓN */
+.inf{
+	font-family: 'negritaanchacuadrada';
+	font-size: 20px;
+}
+.tinf{
+	font-family: 'negritaanchacuadrada';
+	font-size: 20px;
+}
+.inf:hover{
+	font-family: 'roboto1';
+	color: #1a08a6;
+}
+.inf a{
+	color: #ffffff;
+} 
+.inf a:hover{
+	font-family: 'roboto1';
+	color: #1a08a6;
+} 
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 20px;
+	background: #fc7c7c;
+	padding: 0 10px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+	
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 5;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+.wrapper{
+    box-sizing: content-box;
+    background-color: #fff012;
+    height: 60px;
+	justify-content: center;
+    display: flex;	
+}
+.words{
+    overflow: hidden;
+}
+.slide{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+@media (max-width: 768px) {
+	.contenedor {
+	  flex-direction: column;
+	}
+  }
+  
+  /* FOOTER */
+
+.col-md-11{
+	text-align: center;
+ }
+
+.mb-sm{
+	font-family: 'negritaanchacuadrada';
+	font-size: 24px;
+}
+.heading-primary{
+	font-family: 'negritaanchacuadrada';
+	font-size: 24px;
+}
+.cel{
+	font-family: 'roboto3';
+}
+.som{
+	font-family: 'roboto3';
+}
+.list{
+	list-style: none;
+}
+.contacto ul {
+	margin-left: 0;
+	padding-left: 0;
+}

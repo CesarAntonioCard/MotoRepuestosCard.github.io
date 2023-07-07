@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoRepuestosCardozo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="image/fontello-a540fdbf/css/fontello.css">	
+    <link rel="stylesheet" href="image/fontello-c7addf01/css/fontello.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+    <style>
+        .bg-success1{
+            background-color: #E2EFDA;
+            opacity: 0.9;
+        }
+        .bg-negro{
+            color: #000000;
+        }
+        .bg-fondo{
+                background-color: #FFFFFF;
+        } 
+        .bg-fondo-consulta{
+                background-color: #eff4f8;
+        }
+        .bg-fondo-info{
+                background-color: #0f7422;
+        }
+    </style>
+    <a href="https://api.whatsapp.com/send?phone=51973944957&text=Hola%21%20En%20que%20le%20puedo%20ayudar?"
+    class="btn-wsp" target="_blank">
+    <i class="icon-whatsapp"></i>
+  </a>
+
+  <a href="https://www.facebook.com/MotoRepuestosCardozo"
+    class="btn-fb" target="_blank">
+    <i class="icon-facebook"></i>
+  </a>
+    <!-- Cabecera-Menu -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-fondo ">  
+            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom: 15px;"> 
+            <span class="navbar-toggler-icon"></span><img class="img-fluid rounded me-md-4"  src="image/logo.png" width="390" height="24">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      
+            <img class="img-fluid rounded d-none d-sm-none d-md-none d-lg-block"  src="image/logo.png" 
+            width="390" height="24">
+      
+            <ul class="navbar-nav me-0 mb-0 mb-lg-0">
+                <div class="d-grid gap-3 d-md-flex"  id="headera">
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6"  style="border: #FFFFFF;" type="button"><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></button>
+      
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="productos.html"><i class="bi bi-cart-fill"></i>Productos</a></button>
+      
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF; " type="button"><a href="contacto.html"><i class="bi bi-envelope-fill"></i>Contacto</a></button>
+
+                    <button   id="btnbar" class="btn  btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="nosotros.html"><i class="bi bi-people-fill"></i>Nosotros</a></button>
+               </div> 
+            </ul>
+        </div> 
+      </nav>
+
+  <div class="wrapper">
+    <header class="header-mobile">
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <!-- <h1 class="logo">CarpiShop</h1> -->
+        </header>       
+        <nav>
+            <ul class="menu" id="menu-productos">
+                <li>
+                    <button id="ctodos" class="boton-menu boton-categoria active"><i class="fa-solid fa-motorcycle" style="color: #000000;"></i> Todos los productos</button>
+                </li>
+                <li>
+                    <button id="caccesorios" class="boton-menu boton-categoria"><object data="icons/casco-de-moto.png"width="20" height="20"> </object> Accesorios</button>
+                </li>
+                <li>
+                    <button id="cllantas" class="boton-menu boton-categoria"><object data="icons/tire.png"width="20" height="20"> </object>  Llantas</button>
+                </li>
+                <li>
+                    <button id="cplastiqueria" class="boton-menu boton-categoria"><object data="icons/motorbike.png"width="20" height="20"> </object> Plastiquería</button>
+                </li>
+                <li>
+                    <button id="cespejos" class="boton-menu boton-categoria"> <object data="icons/side-mirror.png"width="20" height="20" > </object> Espejos</button>
+                </li>
+                <li>
+                    <button id="cempaques" class="boton-menu boton-categoria"><object data="icons/empaquetadura.png"width="20" height="20" > </object> Empaques</button>
+                </li>
+                <li>
+                    <button id="cbateria" class="boton-menu boton-categoria"><object data="icons/battery.png"width="20" height="20" > </object> Batería</button>
+                </li> 
+                <li>
+                    <button id="camortiguador" class="boton-menu boton-categoria">
+                        <object data="icons/shock-absorber.png"width="20" height="20" > </object>Amortiguadores</button>
+                </li>
+                <li>
+                    <button id="caceites" class="boton-menu boton-categoria"> <object data="icons/oil-bottle.png"width="20" height="20" > </object> Aceites</button>
+                </li>
+                <li>
+                    <button id="carrancadores" class="boton-menu boton-categoria"><object data="icons/starter.png"width="20" height="20" > </object>Arrancadores</button>
+                </li>   
+                <li>
+                    <button id="cluces" class="boton-menu boton-categoria"><object data="icons/luces.png"width="20" height="20" > </object>Luces</button>
+                </li>             
+            </ul>
+        </nav>
+        <footer>
+            <p class="texto-footer">© MotoRepuestosCardozo</p>
+        </footer>
+    </aside>
+    
+    <div id="modalP" class="modalP">
+        <div class="modal-contentP">
+          <span class="closeP">&times;</span>
+          <img class="producto-imagenP" alt="" />
+          <div class="producto-detallesP">
+            <h3 class="producto-tituloP"></h3>
+            <p class="producto-marcaP"></p>
+            <p class="producto-precioP"></p>
+            <p class="producto-precioOfertaP"></p>           
+            <p class="producto-stockP"></p>
+          </div>
+        </div>
+      </div>      
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+        </div>       
+    </main>
+    <div class="pos" id="pos">
+        <div class="select_wrap">
+            <ul class="default_option">
+                <li>
+                    <div class="predeterminada">
+                      <div class="icon"></div>
+                      <p>Filtar por</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="select_ul">
+                <li>
+                    <div class="option az">
+                      <div class="icon"><img src="icons/az.png" alt="" width="30" height="30"></div>
+                      <p>Nombre, creciente</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="option za">
+                      <div class="icon"><img src="icons/za.png" alt="" width="30" height="30"></div>
+                      <p>Nombre, decreciente</p>
+                    </div>  
+                </li> 
+                <li>
+                    <div class="option mayor">
+                      <div class="icon"><img src="icons/mayor.png" alt="" width="30" height="30"></div>
+                      <p>Precio más alto</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="option menor">
+                      <div class="icon"><img src="icons/menor.png" alt="" width="30" height="30"></div>
+                      <p>Precio más bajo</p>
+                    </div>  
+                </li>                         
+            </ul>
+        </div>
+        
+      </div>
+</div>
+<!-- <div class="wrapper"> -->
+    <div class="row">
+        <h3 class ="title-marcas">Nuestras Marcas</h3>
+      <div class="contenedor-marcas">
+        <div class="row align-items-center">
+          <div class="col-12 col-carousel">
+            <div class="owl-carousel carousel-main">
+                <div><img src="image/Marcas/01.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/02.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/03.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/04.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/05.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/06.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/07.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/08.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/09.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/10.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/bjr.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/gom.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/kigcol.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/newlid.png" width="50" height="100"></div>
+                <div><img src="image/Marcas/premier.png" width="50" height="100"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+<!-- </div> -->
+<footer class="short" id="footer">
+    <div class="containerFooter">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+          <h4 class="heading-primary">Moto Repuestos Cardozo</h4>
+          <p class="som">
+            Somos una empresa dedicada a la venta de repuestos y accesorios para motocicleta...
+            <a href="nosotros.html" class="btn-flat btn-xs">Ver más
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </p>
+          <hr class="light">
+        </div>
+        <div class="col-md-4 contacto">
+          <h5 class="mb-sm">Contacto</h5>
+          <span class="cel">973944957</span>
+          <ul class="list list-icons list-icons-sm">
+            <li>
+              <i class="fa fa-envelope">
+                <a href="mailto:cesarcardozobriceno@gmail.com">cesarcardozobriceno@gmail.com</a>
+              </i>
+            </li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+     <div class="containerFooter">
+       <div class="row">
+         <div class="col-md-1">
+           <a href="#" class="logoF">
+             <img class="image-responsive" src="image/logo.png" alt="" height="30px">
+           </a>
+         </div>
+         <div class="col-md-11">
+           <p>© 2023<b>Moto Repuestos Cardozo</b>-Todos los Derechos Reservados.</p>
+         </div>
+       </div>
+     </div>
+    </div>
+   </footer>
+    </div>
+    </div>
+    <script src="Js/dataP.js"></script>
+    <script src="Js/productos.js"></script>
+    <script src="Js/mainP.js"></script>
+   
+    <script src="https://kit.fontawesome.com/b9ceb05a24.js" crossorigin="anonymous"></script>
+    
+   
+      <!-- Fin cabecera -->
+</body>

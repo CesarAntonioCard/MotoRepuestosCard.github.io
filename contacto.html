@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoRepuestosCardozo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="image/fontello-a540fdbf/css/fontello.css">	
+    <link rel="stylesheet" href="image/fontello-c7addf01/css/fontello.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+    <style>
+        .bg-success1{
+            background-color: #E2EFDA;
+            opacity: 0.9;
+        }
+        .bg-negro{
+            color: #000000;
+        }
+        .bg-fondo{
+                background-color: #FFFFFF;
+        } 
+        .bg-fondo-consulta{
+                background-color: #eff4f8;
+        }
+        .bg-fondo-info{
+                background-color: #0f7422;
+        }
+    </style>
+    <a href="https://api.whatsapp.com/send?phone=51973944957&text=Hola%21%20En%20que%20le%20puedo%20ayudar?"
+    class="btn-wsp" target="_blank">
+    <i class="icon-whatsapp"></i>
+  </a>
+
+  <a href="https://www.facebook.com/MotoRepuestosCardozo"
+    class="btn-fb" target="_blank">
+    <i class="icon-facebook"></i>
+  </a>
+    <!-- Cabecera-Menu -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-fondo ">  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom: 15px;"> 
+            <span class="navbar-toggler-icon"></span><img class="img-fluid rounded me-md-4"  src="image/logo.png" width="390" height="24">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <img class="img-fluid rounded d-none d-sm-none d-md-none d-lg-block"  src="image/logo.png" 
+            width="390" height="24">
+
+            <ul class="navbar-nav me-0 mb-0 mb-lg-0">
+                <div class="d-grid gap-3 d-md-flex"  id="headera">
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6"  style="border: #FFFFFF;" type="button"><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></button>
+    
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="productos.html"><i class="bi bi-cart-fill"></i>Productos</a></button>
+    
+                    <button   id="btnbar" class="btn btn-sm btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF; " type="button"><a href="contacto.html"><i class="bi bi-envelope-fill"></i>Contacto</a></button>
+
+                    <button   id="btnbar" class="btn  btn-outline-primary col bg-negro me-lg-5 me-md-6" style="border: #FFFFFF;" type="button"><a href="nosotros.html"><i class="bi bi-people-fill"></i>Nosotros</a></button>
+               </div> 
+            </ul>
+        </div> 
+      </nav>
+      <!-- Fin cabecera -->
+
+      <!-- Consulta-->
+      <div class="contenedor" style="display: flex;">
+        <div class="col-lg-8 col-sm-12 col bg-fondo-consulta"  style="flex: 1;"action="" class="formulario" >
+          <form  id="formulario" >
+            <h3 class="grid text-center">Consulta....</h3>
+            <!-- Grupo: Nombre -->
+                  <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre y apellidos</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre no puede estar vacio.</p>
+                  </div>
+            <!-- Grupo: Correo Electronico -->
+                 <div class="formulario__grupo" id="grupo__correo">
+                   <label for="correo" class="formulario__label">Correo Electrónico</label>
+                   <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">Correo invalido.</p>
+                </div>
+          <!-- Grupo: Consulta -->
+            <div class="formulario__grupo" id="grupo__consulta">
+            <label for="consulta" class="formulario__label">Consulta</label>
+            <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="consulta" id="consulta"   placeholder="">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La consulta no puede estar vacia.</p>
+            </div>
+
+          <div class="formulario__mensaje"  id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle "  style="color:#FF0000";></i><b style="color:#FF0000";>Error:</b>Por favor rellena el formulario correctamente. </p>
+          </div>
+    
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button id="btn-abrir-modal" type="submit" class="boton enviar">
+              <div class="icono">
+                <object data="image/3721418.svg" width="50" height="200"> </object>
+            </div>
+            <span>Enviar</span>
+            </button>
+           </div>                      
+          </form>
+
+        </div>
+
+        <div class="col-lg-4 col-sm-12 col bg-fondo-info" style="color: #FFFFFF; flex: 1;">
+          <div class="informacion" style="margin: 10px;">
+            <div>
+                <h3 class="tinf">Horario</h3>
+                <i class="fa-solid fa-clock"></i>
+            <span class="inf">
+                Lunes - Viernes: 8:00 am - 1:00 pm / 3:00 pm - 7:00 pm
+            </span><br>
+            <i class="fa-solid fa-clock"></i>
+            <span class="inf"> 
+                Sábados: 8:00 am - 1:00 pm
+            </span><br>
+            <br><h3 class="tinf">Telefono</h3>
+            <i class="fa-solid fa-fax"></i>
+            <span class="inf"> 
+                (076) 942676
+            </span><br>
+            <br><h3 class="tinf">Celular</h3>
+            <i class="fa-solid fa-phone"></i>
+            <span class="inf"> 
+                973944957
+            </span><br>
+            <section class="correo">
+                <br class="correo"><h3 class="tinf">Correo</h3>
+            <i class="fa-solid fa-envelope"></i>
+            <span class="inf">    
+                <a class="text-break" href="#">cesarcardozobriceno@gmail.com</a>
+            </span>
+            </section>
+            </div>
+        </div>
+        </div>
+      </div>   
+        <!--Fin Informacón -->  
+
+        <!-- Mapa -->
+    <div class="row">
+        <div class="col-12">
+        <section class="ubi">
+            <h4  class="text-center">Ubiquenos</h4>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.60320593705!2d-78.50279402508636!3d-7.171782192833046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25ba20c88d0a9%3A0x4aabb028908f3995!2sMoto%20Repuestos%20Cardozo!5e0!3m2!1ses!2spe!4v1685919175573!5m2!1ses!2spe"
+                 width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+       </div>
+    </div>
+        <!-- Fin mapa -->
+        <!-- Slider Text -->
+        <div class="row-12">
+        <div class="wrapper">
+            <h2>Ofrecemos productos</h2>
+            <div class="words">
+                <span class="slide"><h3>con los mejores precios</h3></span>
+                <span class="slide"><h3>con las mejores calidades</h3></span>
+                <span class="slide"><h3>de las mejores marcas</h3></span>
+            </div>
+        </div>
+    </div>
+        <!-- Fin slider -->
+        <footer class="short" id="footer">
+          <div class="containerFooter">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-1">
+                <h4 class="heading-primary">Moto Repuestos Cardozo</h4>
+                <p class="som">
+                  Somos una empresa dedicada a la venta de repuestos y accesorios para motocicleta...
+                  <a href="nosotros.html" class="btn-flat btn-xs">Ver más
+                    <i class="fa fa-arrow-right"></i>
+                  </a>
+                </p>
+                <hr class="light">
+              </div>
+              <div class="col-md-4 contacto">
+                <h5 class="mb-sm">Contacto</h5>
+                <span class="cel">973944957</span>
+                <ul class="list list-icons list-icons-sm">
+                  <li>
+                    <i class="fa fa-envelope">
+                      <a href="mailto:cesarcardozobriceno@gmail.com">cesarcardozobriceno@gmail.com</a>
+                    </i>
+                  </li>
+                </ul>
+              </div>        
+            </div>
+          </div>
+          
+          <div class="footer-copyright">
+           <div class="containerFooter">
+             <div class="row">
+               <div class="col-md-1">
+                 <a href="#" class="logoF">
+                   <img class="image-responsive" src="image/logo.png" alt="" height="30px">
+                 </a>
+               </div>
+               <div class="col-md-11">
+                 <p>© 2023<b>Moto Repuestos Cardozo</b>-Todos los Derechos Reservados.</p>
+               </div>
+             </div>
+           </div>
+          </div>
+         </footer>
+    </div>
+    <script src="Js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

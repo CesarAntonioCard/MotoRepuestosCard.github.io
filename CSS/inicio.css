@@ -1,0 +1,559 @@
+
+@font-face {
+  font-family: "negritaanchacuadrada";
+  src: url('../fonts/ArialBlack/Arial\ Black.ttf');
+}
+@font-face {
+font-family: "negritaanchacircular";
+  src: url('../fonts/Cooper/CooperBlackRegular.ttf');
+}
+@font-face {
+font-family: "roboto1";
+  src: url('../fonts/Roboto/Roboto-Black.ttf')
+}
+@font-face {
+font-family: "roboto2";
+  src: url('../fonts/Roboto/Roboto-BlackItalic.ttf')
+}
+@font-face {
+font-family: "roboto3";
+  src: url('../fonts/Roboto/Roboto-Bold.ttf')
+}
+
+#btnbar{
+	font-size: 20px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease; 
+  }
+  #btnbar:hover{
+    box-shadow: 0 0 40px rgba(0, 16, 109, 0.7);
+    background-color: #0D6EFD;
+  }
+  #btnbar i{
+	margin-right:10px;
+  }
+  .navbar-nav{
+	font-family: 'negritaanchacircular';
+  }
+  #headera{
+	margin-left:10%;
+  font-family: 'negritaanchacircular';
+  }
+  
+  a{
+	  text-decoration: none;
+	  color:black;
+    font-family: 'negritaanchacircular';
+  }
+
+
+
+.btn-wsp{
+	position: fixed;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background:#0df053;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0,0.3);
+	z-index: 100;
+}
+.btn-wsp:hover{
+	text-decoration: none;
+	color: #0df053;
+	background: #fff;
+}
+
+.btn-fb{
+	position:fixed;
+	float: left;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	bottom: 90px;
+	background:#3b5998;
+	color: #fff;
+	border-radius: 90px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0,0.3);
+	z-index: 100;
+	
+}
+.btn-fb:hover{
+	text-decoration: none;
+	color: #3b5998;
+	background: #fff;
+
+}
+.frase{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "negritaanchacircular";
+    color: #fff;
+    font-size: xx-large;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    position: relative;
+    height: 330px;
+  }
+  
+  .slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  .slides img.active {
+    opacity: 1; 
+  }
+  
+  .slider-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .slider-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .slider-indicator.active {
+    background-color: #333;
+  }
+
+  .wrapper header{
+    font-family: "negritaanchacircular";
+    color: black;
+    height: 40px;
+    background-color: #EFF4F8;
+    
+  }
+  .wrapper .marcas{
+    margin-top: 30px;
+    
+  }
+  .contenedor-vendidos, .contenedor-accesorios,.contenedor-repuestos {
+    background-color: #EFF4F8; 
+  }
+  .vendido, .accesorio,.repuesto,.oferta {
+    width: 160px;
+  }
+  .vendido-img img,.accesorio-img img, .repuesto-img img, .oferta-img img {
+    width: 142px;
+    height: 160px;
+  }
+
+  .vendido, .accesorio,.repuesto,.oferta {
+    width: 200px;
+    border: 8px solid #fff;
+    border-radius: 15% 10%;
+  }
+  .vendido-pr,.accesorio-pr,.repuesto-pr,.oferta-of,.oferta-pr {
+    text-align: center;
+    font-family: 'negritaanchacuadrada';
+  }
+
+  .vendido-img img,.accesorio-img img, .repuesto-img img, .oferta-img img {
+    width: 182px;
+    height: 200px;
+    background-size: cover;
+    cursor: pointer;
+    border-bottom: 8px solid #fff;
+  }
+  .contenedor-ofertas {
+    background-color: #EFF4F8;
+  }
+  .title-marcas{
+    text-align: center;
+  }
+  .contenedor-marcas {
+    background-color: #EFF4F8;
+  }
+.vendido,.accesorio,.repuesto,.oferta{
+  margin-left: 50px;
+}
+  .vendido:hover,.accesorio:hover,.repuesto:hover,.oferta:hover{
+    border: 8px solid #167002;
+    transition: transform 0.2s ease; 
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    .vendido-pr,.accesorio-pr,.repuesto-pr,.oferta-pr,.oferta-of{
+      color: #083966;
+      font-size: x-large;
+      transition: transform 0.2s ease; 
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+      .vendido-img img,.accesorio-img img,.repuesto-img img,.oferta-img img{
+        border-bottom: 8px solid #167002;
+        transition: transform 0.2s ease; 
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+      }
+    }
+  }
+  #modalImage {
+    transition: transform .2s; 
+  }
+  #modalImage:hover{
+    transform: scale(1.5);
+  }
+
+  .oferta-pr{
+    text-decoration: line-through;
+  }
+  .sliders{
+    display: inline-flex;
+  }
+
+  .pie {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .gr1 {
+    width: 100%;
+    background-color: #219526;
+    margin: auto;
+    display: grid;
+  }
+  .gr1 .box figure {
+    width: 100%;
+    height:100%;
+  }
+  .gr1 .box img{
+    width: 30px;
+    position: relative;
+  }
+  .gr1 .box .casco{
+    position: relative;
+    float:left;
+    width: 80px;
+  }
+  .gr2 {
+    text-align: center;
+  }
+
+  .btnModal {
+    position: relative;
+    background: #EFF4F8;
+    text-decoration: none;
+  }
+  
+  .btnModal:hover {
+    background: #EFF4F8;
+  }
+  
+  #modalContent {
+    font-family: 'negritaanchacuadrada';
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: #000000;
+    line-height: 20px;
+    background: #AEF618;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  #modal{
+    font-family: 'negritaanchacuadrada';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  #modal > a {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    color: #000000;
+    background: #167002;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  :target {
+    display: block!important;
+    opacity: 1!important;
+  }
+  
+  #modalContent > a {
+    font-family: 'negritaanchacuadrada';
+    position: absolute;
+    color: #000000;
+    top: 0;
+    right: 0;
+    background: #167002;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .imageContainer {
+    text-align: center;
+  }
+  
+  #modalImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .textContainer {
+    text-align: justify;
+  }
+  .textContainer {
+    font-size: 20px;
+    font-family:'roboto3' ;
+  }
+  .textContainer h1{
+    font-size: 24px;
+    font-family:'negritaanchacuadrada' ;
+  }
+  /* PC */
+  @media screen and (max-width: 768px) {
+    #modalContent {
+      padding: 10px;
+      top: 20%;
+      left: 10%;
+      width: 80%;
+      display: block;
+    }
+    .vendido, .accesorio,.repuesto,.oferta {
+      width: 160px;
+    }
+    .vendido-img img,.accesorio-img img, .repuesto-img img, .oferta-img img {
+      width: 142px;
+      height: 160px;
+    }
+  }
+  /* Celular */
+  @media screen and (min-width: 769px) {
+    #modalContent {
+      display: flex;
+      align-items: center;
+    }
+  
+    .imageContainer {
+      margin-right: 20px;
+    }
+  }
+  
+  #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000000;
+    background: #167002;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+.headMarcas{
+  text-align: center;
+  font-family: 'negritaanchacuadrada';
+  font-size: 20px;
+}
+/* Modal para las marcas aplicando el carousel */
+ 
+.owl-carousel{
+  background-color: #EFF4F8;
+}
+  .owl-carousel .item img {
+    
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+  }
+  .modalM {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-contentM {
+    background-color: #AEF618;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .closeM {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000000;
+    background: #167002;
+    padding: 2px;
+    font-size: 15px;
+    font-family:'negritaanchacuadrada' ;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#modalImageM {
+    max-height: 90px; 
+    margin-right: 10px;
+}
+p ~ p {
+  font-family: 'roboto3'; 
+  font-size: 20px;
+}
+#modalTextM p:first-child {
+  font-family: 'negritaanchacuadrada';
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-contentM {
+      margin: 20px auto;
+      padding: 10px;
+      width: 90%;
+    }
+    #modalTextM {
+      text-align: left;
+    }
+  }
+
+  .owl-prev, .owl-next {
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev { left: 10px; }
+.owl-next { 
+  transition: transform 0.3s ease; 
+  transform: rotateY(180deg);
+  transform: translate3d(50px);
+  transform-style: preserve-3d;
+  right: 10px; 
+ }
+.owl-prev i, .owl-next i {transform : scale(2); color: #000000;}
+
+/* FOOTER */
+
+.col-md-11{
+	text-align: center;
+ }
+
+.mb-sm{
+	font-family: 'negritaanchacuadrada';
+	font-size: 24px;
+}
+.heading-primary{
+	font-family: 'negritaanchacuadrada';
+	font-size: 24px;
+}
+.cel{
+	font-family: 'roboto3';
+}
+.som{
+	font-family: 'roboto3';
+}
+.list{
+	list-style: none;
+}
+.contacto ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+.modalI {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-contentI {
+  background-color: #AEF618;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 20%;
+}
+
+.closeI {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000000;
+  background: #167002;
+  padding: 2px;
+  font-size: 15px;
+  font-family:'negritaanchacuadrada' ;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalImageI {
+  max-height: 90px; 
+  margin-right: 10px;
+}
